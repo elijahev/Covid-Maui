@@ -1,0 +1,4 @@
+import pandas as pd
+
+df = pd.DataFrame({'Month':['03/20', '04/20', '05/20', '06/20', '07/20', '08/20', '09/20', '10/20', '11/20', '12/20'], 'Number of New Cases':[31, 84, 5, 5, 44, 171, 50, 133, 150, 200]})
+ax = df.plot.bar(x='Month', y='Number of New Cases', rot=0)
